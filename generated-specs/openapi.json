@@ -1,0 +1,61 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Orquestación de Saga con GenServer y Pattern Matching en Elixir Phoenix API Specification",
+    "version": "1.0.0",
+    "description": "Auto-generated OpenAPI specification for Orquestación de Saga con GenServer y Pattern Matching en Elixir Phoenix from Gherkin feature spec."
+  },
+  "paths": {
+    "/api/v1/orquestaci-n-de-saga-con-genserver-y-pattern-matching-en-elixir-phoenix": {
+      "post": {
+        "summary": "POST /api/v1/orquestaci-n-de-saga-con-genserver-y-pattern-matching-en-elixir-phoenix",
+        "operationId": "unknownOrquestacindeSagaconGenServeryPatternMatchingenElixirPhoenix",
+        "security": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "requestId": {
+                    "type": "string",
+                    "format": "uuid"
+                  },
+                  "timestamp": {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  "payload": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                  }
+                },
+                "required": [
+                  "requestId",
+                  "timestamp",
+                  "payload"
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "bearerAuth": {
+        "type": "http",
+        "scheme": "bearer",
+        "bearerFormat": "JWT"
+      }
+    }
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "version": "1.0",
+  "generatedAt": "2026-09-16T14:22:10.552Z",
+  "createdBy": "gherkin-ai-cli",
+  "artifacts": [
+    {
+      "filePath": "ADR-001-architecture-decisions.md",
+      "type": "other",
+      "checksum": "199e40b769070f2684aa706e0277d5c4e9b6d1a6ca25d1dee45156ff5090b133"
+    },
+    {
+      "filePath": "openapi.json",
+      "type": "openapi",
+      "checksum": "f295c5c7bf07bd03ca40a2186413881a89731712fccaae43bc665d87bd2cda8c"
+    },
+    {
+      "filePath": "asyncapi.json",
+      "type": "contract",
+      "checksum": "ad8944bb9f07b752c490fd7eb2b4a089a9fe4796bbb532a2ef84bc616b5c059c"
+    },
+    {
+      "filePath": "fixtures.ts",
+      "type": "fixture",
+      "checksum": "796fef5a26098a6f7d02305ab3ecc0d1fc053e3ba658d526c15f22cc9222689d"
+    },
+    {
+      "filePath": "seed.sql",
+      "type": "fixture",
+      "checksum": "4ced70eb176cc8384c0c05830283136a1133d3b1aa90e08338f286e93a02df70"
+    },
+    {
+      "filePath": "docker-compose.yml",
+      "type": "config",
+      "checksum": "c8a00b18375ce159ef9f3b61fba5de2cc7d1aeb03dd3e54f7e1113b2192d902a"
+    },
+    {
+      "filePath": ".env.example",
+      "type": "config",
+      "checksum": "28068363c75b12d2e5c4c827925707dbd9d3a8bdd1a377000efb680d322777ed"
+    },
+    {
+      "filePath": "infrastructure/lib/transactional-system-elixir-phoenix-stack.ts",
+      "type": "config",
+      "checksum": "f97c1ead8fd63fc58e6fd387bd5f831a964dc8d6c535e5c82e269005d367ddf9"
+    },
+    {
+      "filePath": "infrastructure/cdk.json",
+      "type": "config",
+      "checksum": "7e979ace6dc003560756ece02490df9b417d30d8160325701a54bb7ee78eb485"
+    },
+    {
+      "filePath": "infrastructure/package.json",
+      "type": "config",
+      "checksum": "614d2e6b7b577deb558d92c3d833db0d7b16d1bda39e40f040a4041a160bb29c"
+    },
+    {
+      "filePath": "prompts/domain-agent.md",
+      "type": "prompt",
+      "checksum": "f1d55ab6825a5377e4a0b5e9752cbfe53e60518ab313add8f988b8b75d27ec4a"
+    },
+    {
+      "filePath": "prompts/backend-agent.md",
+      "type": "prompt",
+      "checksum": "298dc1b93e27a0b97aa7ccc64b0108e3f7bb05507f506d8c66fcf07ec86fc18c"
+    },
+    {
+      "filePath": "prompts/qa-agent.md",
+      "type": "prompt",
+      "checksum": "a7ebee8fb118420ccfb65d8ab6b2bf8b80de8323038c0b23a0f3e2790b892c31"
+    }
+  ]
+}

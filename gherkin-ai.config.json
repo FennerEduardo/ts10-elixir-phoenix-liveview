@@ -1,0 +1,28 @@
+{
+  "projectName": "transactional-system-elixir-phoenix",
+  "architecture": "monolith",
+  "stack": {
+    "language": "elixir",
+    "framework": "phoenix",
+    "orm": "elixir-orm",
+    "database": "mysql",
+    "validation": "elixir-val",
+    "auth": "jwt-bcrypt",
+    "messaging": "none",
+    "testing": "elixir-test"
+  },
+  "frontendStack": {
+    "framework": "phoenix-liveview",
+    "language": "javascript",
+    "bundler": "vite",
+    "unitTesting": "vitest",
+    "e2eTesting": "cypress"
+  },
+  "rules": {
+    "bcryptCostFactor": 12,
+    "jwtTtlSeconds": 3600,
+    "strictLayerBoundaries": true,
+    "coverageTarget": 85
+  },
+  "outputDir": "./generated-specs"
+}
