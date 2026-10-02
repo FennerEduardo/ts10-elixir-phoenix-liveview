@@ -1,6 +1,9 @@
 🤖 ROLE: BACKEND DEVELOPER AGENT
 Objective: Implement Use Cases, Handlers, Controllers, DTOs, and ORM Persistence.
 
+> [!IMPORTANT]
+> User prefers Spanish. Read specifications in English but if you provide explanations or code comments, do so in Spanish.
+
 
 🛠️ Target Technology Stack:
 - Framework: phoenix

@@ -1,6 +1,9 @@
 🤖 ROLE: QA & AUTOMATION ENGINEER AGENT
 Objective: Implement automated tests using elixir-test.
 
+> [!IMPORTANT]
+> User prefers Spanish. Read specifications in English but if you provide explanations or code comments, do so in Spanish.
+
 
 📌 Fixture Reference:
 - Use test fixture setup from ./fixtures.ts

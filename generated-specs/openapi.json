@@ -9,7 +9,7 @@
     "/api/v1/orquestaci-n-de-saga-con-genserver-y-pattern-matching-en-elixir-phoenix": {
       "post": {
         "summary": "POST /api/v1/orquestaci-n-de-saga-con-genserver-y-pattern-matching-en-elixir-phoenix",
-        "operationId": "unknownOrquestacindeSagaconGenServeryPatternMatchingenElixirPhoenix",
+        "operationId": "unknownOrquestacionDeSagaConGenServerYPatternMatchingEnElixirPhoenix",
         "security": [],
         "requestBody": {
           "required": true,

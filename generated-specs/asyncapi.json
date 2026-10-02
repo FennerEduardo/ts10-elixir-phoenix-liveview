@@ -7,12 +7,12 @@
   },
   "defaultContentType": "application/json",
   "channels": {
-    "orquestacindesagacongenserverypatternmatchingenelixirphoenix/events/pedidoyeventooutboxsoninsertadosatmicamenteenpostgresqlevent": {
+    "orquestaciondesagacongenserverypatternmatchingenelixirphoenix/events/pedidoyeventooutboxsoninsertadosatmicamenteenpostgresqlevent": {
       "bindings": {
         "rabbitmq": {
           "is": "routingKey",
           "queue": {
-            "name": "orquestacindesagacongenserverypatternmatchingenelixirphoenix.pedidoyeventooutboxsoninsertadosatmicamenteenpostgresqlevent.queue",
+            "name": "orquestaciondesagacongenserverypatternmatchingenelixirphoenix.pedidoyeventooutboxsoninsertadosatmicamenteenpostgresqlevent.queue",
             "durable": true,
             "exclusive": false,
             "autoDelete": false
@@ -20,7 +20,7 @@
           "bindingVersion": "0.2.0"
         },
         "kafka": {
-          "topic": "orquestacindesagacongenserverypatternmatchingenelixirphoenix.pedidoyeventooutboxsoninsertadosatmicamenteenpostgresqlevent",
+          "topic": "orquestaciondesagacongenserverypatternmatchingenelixirphoenix.pedidoyeventooutboxsoninsertadosatmicamenteenpostgresqlevent",
           "partitions": 3,
           "replicas": 2,
           "bindingVersion": "0.3.0"
@@ -98,12 +98,12 @@
         }
       }
     },
-    "orquestacindesagacongenserverypatternmatchingenelixirphoenix/events/phoenixpubsubtransmiteeventoordercreatedorderalprocesodeliveevent": {
+    "orquestaciondesagacongenserverypatternmatchingenelixirphoenix/events/phoenixpubsubtransmiteeventoordercreatedorderalprocesodeliveevent": {
       "bindings": {
         "rabbitmq": {
           "is": "routingKey",
           "queue": {
-            "name": "orquestacindesagacongenserverypatternmatchingenelixirphoenix.phoenixpubsubtransmiteeventoordercreatedorderalprocesodeliveevent.queue",
+            "name": "orquestaciondesagacongenserverypatternmatchingenelixirphoenix.phoenixpubsubtransmiteeventoordercreatedorderalprocesodeliveevent.queue",
             "durable": true,
             "exclusive": false,
             "autoDelete": false
@@ -111,7 +111,7 @@
           "bindingVersion": "0.2.0"
         },
         "kafka": {
-          "topic": "orquestacindesagacongenserverypatternmatchingenelixirphoenix.phoenixpubsubtransmiteeventoordercreatedorderalprocesodeliveevent",
+          "topic": "orquestaciondesagacongenserverypatternmatchingenelixirphoenix.phoenixpubsubtransmiteeventoordercreatedorderalprocesodeliveevent",
           "partitions": 3,
           "replicas": 2,
           "bindingVersion": "0.3.0"
