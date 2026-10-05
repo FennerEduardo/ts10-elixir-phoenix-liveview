@@ -3,7 +3,7 @@ version: '3.8'
 services:
   # Host Environment SDK Isolation Sandbox
   app:
-    image: node:20-alpine
+    image: elixir:1.17
     container_name: transactional-system-elixir-phoenix-app
     volumes:
       - .:/app

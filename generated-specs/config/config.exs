@@ -10,3 +10,11 @@ config :transactional_system_elixir_phoenix, TransactionalSystemElixirPhoenixWeb
 
 config :phoenix, :json_library, Jason
 config :logger, level: if(config_env() == :test, do: :warning, else: :info)
+
+# OpenTelemetry: no exporter unless configured (e.g. opentelemetry_exporter with OTEL_EXPORTER_OTLP_ENDPOINT).
+config :opentelemetry, traces_exporter: :none
+
+# Tests export spans synchronously so the runtime integration test can assert trace propagation.
+if config_env() == :test do
+  config :opentelemetry, processors: [{:otel_simple_processor, %{}}]
+end

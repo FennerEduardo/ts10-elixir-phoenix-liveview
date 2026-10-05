@@ -22,6 +22,10 @@ defmodule TransactionalSystemElixirPhoenix.Domain.OrquestacionDeSagaConGenServer
 
   def new(_), do: {:error, "OrquestacionDeSagaConGenServerYPatternMatchingEnElixirPhoenix id is required"}
 
+  @doc "Rebuilds an aggregate from persisted state; no events are recorded."
+  @spec restore(String.t(), String.t(), non_neg_integer()) :: t()
+  def restore(id, state, version), do: %__MODULE__{id: id, state: state, version: version}
+
   @spec process_orquestacion_de_saga_con_gen_server_y_pattern_matching_en_elixir_phoenix(t(), map()) :: {:ok, t(), event()} | {:error, String.t()}
   def process_orquestacion_de_saga_con_gen_server_y_pattern_matching_en_elixir_phoenix(%__MODULE__{} = aggregate, command), do: execute(aggregate, command, "PedidoYEventoOutboxSonInsertadosAtmicamenteEnPostgreSql")
 
