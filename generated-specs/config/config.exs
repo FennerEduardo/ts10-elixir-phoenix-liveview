@@ -11,6 +11,10 @@ config :transactional_system_elixir_phoenix, TransactionalSystemElixirPhoenixWeb
 config :phoenix, :json_library, Jason
 config :logger, level: if(config_env() == :test, do: :warning, else: :info)
 
+# The outbox relay runs in the application (DATABASE_URL + AMQP_URL); off in tests, where its publish
+# spans would mix with the runtime tests' trace assertions.
+config :transactional_system_elixir_phoenix, :outbox_relay, config_env() != :test
+
 # OpenTelemetry: no exporter unless configured (e.g. opentelemetry_exporter with OTEL_EXPORTER_OTLP_ENDPOINT).
 config :opentelemetry, traces_exporter: :none
 

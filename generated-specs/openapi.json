@@ -1,9 +1,9 @@
 {
   "openapi": "3.0.3",
   "info": {
-    "title": "Orquestación de Saga con GenServer y Pattern Matching en Elixir Phoenix API Specification",
+    "title": "transactional-system-elixir-phoenix API",
     "version": "1.0.0",
-    "description": "Auto-generated OpenAPI specification for Orquestación de Saga con GenServer y Pattern Matching en Elixir Phoenix from Gherkin feature spec."
+    "description": "Service API of transactional-system-elixir-phoenix, merged from 1 feature contract(s) in contracts/."
   },
   "paths": {
     "/api/v1/orquestaci-n-de-saga-con-genserver-y-pattern-matching-en-elixir-phoenix": {

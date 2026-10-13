@@ -1,6 +1,6 @@
 defmodule TransactionalSystemElixirPhoenix.Runtime.Topology do
   @moduledoc "Topic exchange -> consumer queue, which dead-letters rejected messages to a fanout DLX -> DLQ."
-  defstruct exchange: "orquestacion-de-saga-con-gen-server-y-pattern-matching-en-elixir-phoenix.events", queue: "orquestacion-de-saga-con-gen-server-y-pattern-matching-en-elixir-phoenix.consumer", dlx: "orquestacion-de-saga-con-gen-server-y-pattern-matching-en-elixir-phoenix.dlx", dlq: "orquestacion-de-saga-con-gen-server-y-pattern-matching-en-elixir-phoenix.dlq"
+  defstruct exchange: "transactional-system-elixir-phoenix.events", queue: "transactional-system-elixir-phoenix.consumer", dlx: "transactional-system-elixir-phoenix.dlx", dlq: "transactional-system-elixir-phoenix.dlq"
 
   def for_prefix(prefix), do: %__MODULE__{exchange: "#{prefix}.events", queue: "#{prefix}.consumer", dlx: "#{prefix}.dlx", dlq: "#{prefix}.dlq"}
 

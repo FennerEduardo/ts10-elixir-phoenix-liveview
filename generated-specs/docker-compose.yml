@@ -9,10 +9,11 @@ services:
       - .:/app
     working_dir: /app
     environment:
-      - ENVIRONMENT=development
-      - DATABASE_URL=${DATABASE_URL:-mysql://dev_user:dev_password@mysql:5432/transactional-system-elixir-phoenix_db}
+      - MIX_ENV=dev
+      - PORT=4000
+      - DATABASE_URL=${DATABASE_URL:-mysql://dev_user:dev_password@mysql:3306/transactional-system-elixir-phoenix_db}
     ports:
-      - "8000:8000"
+      - "4000:4000"
     depends_on:
       - mysql
 
