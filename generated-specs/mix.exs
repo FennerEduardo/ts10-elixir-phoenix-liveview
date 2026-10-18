@@ -13,7 +13,8 @@ defmodule TransactionalSystemElixirPhoenix.MixProject do
   end
 
   def application do
-    [mod: {TransactionalSystemElixirPhoenix.Application, []}, extra_applications: [:logger]]
+    # :inets / :ssl: HTTP client of the Pub/Sub adapter (runtime/broker.ex).
+    [mod: {TransactionalSystemElixirPhoenix.Application, []}, extra_applications: [:logger, :inets, :ssl]]
   end
 
   defp elixirc_paths(:test), do: ["lib", "test/support"]

@@ -16,7 +16,9 @@ defmodule TransactionalSystemElixirPhoenixWeb.Router do
 
   scope "/", TransactionalSystemElixirPhoenixWeb do
     pipe_through :browser
-    live "/", OrquestacionDeSagaConGenServerYPatternMatchingEnElixirPhoenixLive
+    # One LiveView per feature; the first one is also the home page.
+    live "/", OrquestacionDeSagaConGenServerYPatternMatchingEnElixirPhoenixLive, :index, as: :home
+    live "/orquestacion-de-saga-con-gen-server-y-pattern-matching-en-elixir-phoenix", OrquestacionDeSagaConGenServerYPatternMatchingEnElixirPhoenixLive
   end
 
   scope "/", TransactionalSystemElixirPhoenixWeb do

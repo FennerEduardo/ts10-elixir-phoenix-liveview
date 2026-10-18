@@ -1,18 +1,16 @@
 defmodule TransactionalSystemElixirPhoenix.Runtime.OutboxRelay do
   @moduledoc """
   Publishes pending outbox rows. Rows are claimed with FOR UPDATE SKIP LOCKED and a lease, so
-  concurrent relays never publish the same row; publisher confirms guarantee delivery to the
-  broker before a row is marked published. Use one relay (and channel) per process.
+  concurrent relays never publish the same row; the publisher returns only once the broker has
+  accepted the message (RabbitMQ confirms, Pub/Sub publish), before a row is marked published.
+  Use one relay (and publisher, from Broker.publisher/2) per process.
   """
-  alias TransactionalSystemElixirPhoenix.Runtime.{Schema, Telemetry}
+  alias TransactionalSystemElixirPhoenix.Runtime.{Broker, Schema, Telemetry}
 
   @lease_seconds 30
   @max_attempts 5
 
-  @doc "Puts the channel in confirm mode; call once per channel."
-  def prepare(chan), do: AMQP.Confirm.select(chan)
-
-  def publish_batch(conn, chan, exchange, schema, worker_id, limit \\ 50) do
+  def publish_batch(conn, publisher, schema, worker_id, limit \\ 50) do
     s = Schema.name(schema)
 
     %{rows: rows} =
@@ -24,23 +22,22 @@ defmodule TransactionalSystemElixirPhoenix.Runtime.OutboxRelay do
         [worker_id, @lease_seconds * 1.0, limit]
       )
 
-    Enum.count(rows, fn row -> publish(conn, chan, exchange, s, worker_id, row) end)
+    Enum.count(rows, fn row -> publish(conn, publisher, s, worker_id, row) end)
   end
 
-  defp publish(conn, chan, exchange, s, worker_id, [id, tenant, event_type, payload, traceparent]) do
+  defp publish(conn, publisher, s, worker_id, [id, tenant, event_type, payload, traceparent]) do
+    destination = publisher.destination
+
     {span, ctx} =
-      Telemetry.start_span(Telemetry.context_from(traceparent), "#{exchange} publish", :producer, %{
-        "messaging.system" => "rabbitmq",
-        "messaging.destination.name" => exchange,
+      Telemetry.start_span(Telemetry.context_from(traceparent), "#{destination} publish", :producer, %{
+        "messaging.system" => Broker.system(Map.get(publisher, :broker, publisher)),
+        "messaging.destination.name" => destination,
         "messaging.message.id" => id,
         "tenant.id" => tenant
       })
 
-    headers = [{"tenant_id", :longstr, tenant}] ++ Enum.map(List.wrap(Telemetry.traceparent_of(ctx)), &{"traceparent", :longstr, &1})
-
     try do
-      :ok = AMQP.Basic.publish(chan, exchange, event_type, payload, message_id: id, persistent: true, content_type: "application/json", type: event_type, headers: headers)
-      true = AMQP.Confirm.wait_for_confirms(chan, 10_000)
+      :ok = Broker.publish(publisher, %{message_id: id, event_type: event_type, tenant_id: tenant, traceparent: Telemetry.traceparent_of(ctx), body: payload})
       Postgrex.query!(conn, "UPDATE #{s}.ghk_outbox SET published_at = now(), claimed_until = NULL WHERE id = $1 AND claimed_by = $2", [id, worker_id])
       true
     rescue
