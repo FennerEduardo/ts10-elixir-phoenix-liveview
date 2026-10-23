@@ -15,8 +15,20 @@ config :logger, level: if(config_env() == :test, do: :warning, else: :info)
 # spans would mix with the runtime tests' trace assertions.
 config :transactional_system_elixir_phoenix, :outbox_relay, config_env() != :test
 
-# OpenTelemetry: no exporter unless configured (e.g. opentelemetry_exporter with OTEL_EXPORTER_OTLP_ENDPOINT).
-config :opentelemetry, traces_exporter: :none
+# OpenTelemetry: with OTEL_EXPORTER_OTLP_ENDPOINT set, spans go over OTLP/HTTP to that collector (service.name from
+# OTEL_SERVICE_NAME); without it nothing is exported and nothing connects.
+if config_env() != :test and System.get_env("OTEL_EXPORTER_OTLP_ENDPOINT", "") != "" do
+  config :opentelemetry,
+    span_processor: :batch,
+    traces_exporter: :otlp,
+    resource: [service: [name: System.get_env("OTEL_SERVICE_NAME", "transactional-system-elixir-phoenix")]]
+
+  config :opentelemetry_exporter,
+    otlp_protocol: :http_protobuf,
+    otlp_endpoint: System.get_env("OTEL_EXPORTER_OTLP_ENDPOINT")
+else
+  config :opentelemetry, traces_exporter: :none
+end
 
 # Tests export spans synchronously so the runtime integration test can assert trace propagation.
 if config_env() == :test do

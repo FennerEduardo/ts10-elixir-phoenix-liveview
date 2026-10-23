@@ -29,6 +29,7 @@ defmodule TransactionalSystemElixirPhoenix.MixProject do
       {:amqp, "~> 4.0"},
       {:opentelemetry_api, "~> 1.4"},
       {:opentelemetry, "~> 1.5"},
+      {:opentelemetry_exporter, "~> 1.8"},
       {:phoenix_live_view, "~> 1.0"},
       {:phoenix_html, "~> 4.1"},
       {:lazy_html, ">= 0.1.0", only: :test}

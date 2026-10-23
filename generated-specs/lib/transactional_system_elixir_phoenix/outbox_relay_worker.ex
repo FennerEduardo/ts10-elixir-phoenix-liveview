@@ -15,7 +15,8 @@ defmodule TransactionalSystemElixirPhoenix.OutboxRelayWorker do
   def handle_info(:connect, state) do
     try do
       broker = TransactionalSystemElixirPhoenix.Runtime.Broker.connect()
-      :ok = TransactionalSystemElixirPhoenix.Runtime.Broker.declare(broker, %TransactionalSystemElixirPhoenix.Runtime.Topology{})
+      # GHK_DECLARE_TOPOLOGY=false when infrastructure as code owns the topology (least-privilege credentials).
+      if System.get_env("GHK_DECLARE_TOPOLOGY") != "false", do: :ok = TransactionalSystemElixirPhoenix.Runtime.Broker.declare(broker, %TransactionalSystemElixirPhoenix.Runtime.Topology{})
       send(self(), :tick)
       {:noreply, %{state | publisher: TransactionalSystemElixirPhoenix.Runtime.Broker.publisher(broker, %TransactionalSystemElixirPhoenix.Runtime.Topology{}.exchange)}}
     rescue
