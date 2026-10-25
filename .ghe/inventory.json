@@ -1,0 +1,334 @@
+{
+  "version": "2",
+  "cliVersion": "3.2.1",
+  "features": {
+    "features/phoenix_saga_actor.feature": {
+      "checksum": "e99d23a008d267df5fe2b24495ef9491c0b438c8594479fb42c5f0035070c6e9",
+      "contracts": {
+        "contracts/phoenix-saga-actor/ADR-OrquestacionDeSagaConGenServerYPatternMatchingEnElixirPhoenix.md": "199e40b769070f2684aa706e0277d5c4e9b6d1a6ca25d1dee45156ff5090b133",
+        "contracts/phoenix-saga-actor/openapi.json": "f688297f8b9f20244ec6383a3197ab04423a48b375bd854d8fc2566518897ff9",
+        "openapi.json": "c8715b705aa03e79b9f611d7649cdb1c50bd6bdc870eeaa05b9a2fbb5c57463e",
+        "contracts/phoenix-saga-actor/asyncapi.json": "2a6e187968c07b9acc64cd131bb9acd2cd6e31af1006d485c9b48209884c44be",
+        "asyncapi.json": "be14316271ee5152f52ca37d8d6bdef54065da6233f61eab0d5d1569b5321321"
+      }
+    }
+  },
+  "artifacts": [
+    {
+      "filePath": ".dockerignore",
+      "type": "test",
+      "checksum": "890a37596742bf17d4689223d7aab3089fd33fe960fe41e5c2e4b05e13e4c71f",
+      "feature": "features/phoenix_saga_actor.feature",
+      "generatedAt": "2026-10-25T05:31:07.615Z"
+    },
+    {
+      "filePath": ".env.example",
+      "type": "config",
+      "checksum": "e88706b5f096b3c59557506bc53e13021044e49018a65a89fcf2c86b106537b8",
+      "feature": "features/phoenix_saga_actor.feature",
+      "generatedAt": "2026-10-25T05:31:07.615Z"
+    },
+    {
+      "filePath": "ADR-001-architecture-decisions.md",
+      "type": "other",
+      "checksum": "199e40b769070f2684aa706e0277d5c4e9b6d1a6ca25d1dee45156ff5090b133",
+      "feature": "features/phoenix_saga_actor.feature",
+      "generatedAt": "2026-10-25T05:31:07.615Z"
+    },
+    {
+      "filePath": "asyncapi.json",
+      "type": "contract",
+      "checksum": "be14316271ee5152f52ca37d8d6bdef54065da6233f61eab0d5d1569b5321321",
+      "feature": "features/phoenix_saga_actor.feature",
+      "generatedAt": "2026-10-25T05:31:07.615Z"
+    },
+    {
+      "filePath": "config/config.exs",
+      "type": "test",
+      "checksum": "00411a3a986333c1d054b9903cee22d72007db2df54218e862a29cbecb4df3f2",
+      "feature": "features/phoenix_saga_actor.feature",
+      "generatedAt": "2026-10-25T05:31:07.615Z"
+    },
+    {
+      "filePath": "contracts/phoenix-saga-actor/ADR-OrquestacionDeSagaConGenServerYPatternMatchingEnElixirPhoenix.md",
+      "type": "other",
+      "checksum": "199e40b769070f2684aa706e0277d5c4e9b6d1a6ca25d1dee45156ff5090b133",
+      "feature": "features/phoenix_saga_actor.feature",
+      "generatedAt": "2026-10-25T05:31:07.615Z"
+    },
+    {
+      "filePath": "contracts/phoenix-saga-actor/asyncapi.json",
+      "type": "contract",
+      "checksum": "2a6e187968c07b9acc64cd131bb9acd2cd6e31af1006d485c9b48209884c44be",
+      "feature": "features/phoenix_saga_actor.feature",
+      "generatedAt": "2026-10-25T05:31:07.615Z"
+    },
+    {
+      "filePath": "contracts/phoenix-saga-actor/openapi.json",
+      "type": "openapi",
+      "checksum": "f688297f8b9f20244ec6383a3197ab04423a48b375bd854d8fc2566518897ff9",
+      "feature": "features/phoenix_saga_actor.feature",
+      "generatedAt": "2026-10-25T05:31:07.615Z"
+    },
+    {
+      "filePath": "docker-compose.yml",
+      "type": "config",
+      "checksum": "fd3c107fda086323cc8709f1c1fd019f493007df2c2c30f5e4ae2d6213e1b7c1",
+      "feature": "features/phoenix_saga_actor.feature",
+      "generatedAt": "2026-10-25T05:31:07.615Z"
+    },
+    {
+      "filePath": "Dockerfile",
+      "type": "test",
+      "checksum": "9e36a62a161fbfaf4c9d36ecb8e9f05a0f589f2d8184aff6c5484a2874d06103",
+      "feature": "features/phoenix_saga_actor.feature",
+      "generatedAt": "2026-10-25T05:31:07.615Z"
+    },
+    {
+      "filePath": "features/phoenix_saga_actor.feature",
+      "type": "other",
+      "checksum": "e99d23a008d267df5fe2b24495ef9491c0b438c8594479fb42c5f0035070c6e9",
+      "feature": "features/phoenix_saga_actor.feature",
+      "generatedAt": "2026-10-25T05:31:07.615Z"
+    },
+    {
+      "filePath": "fixtures.ts",
+      "type": "fixture",
+      "checksum": "9d9ae8c9d13a659c48cae21e7828f34499f4afd79aadf32bd721161af67a2fde",
+      "feature": "features/phoenix_saga_actor.feature",
+      "generatedAt": "2026-10-25T05:31:07.615Z"
+    },
+    {
+      "filePath": "lib/transactional_system_elixir_phoenix_web/components/layouts.ex",
+      "type": "test",
+      "checksum": "31820cda2376884aed58d9682473b6a668c3fc4eadb28b8a7419b8ae6df6d495",
+      "feature": "features/phoenix_saga_actor.feature",
+      "generatedAt": "2026-10-25T05:31:07.615Z"
+    },
+    {
+      "filePath": "lib/transactional_system_elixir_phoenix_web/controllers/orquestacion_de_saga_con_gen_server_y_pattern_matching_en_elixir_phoenix_controller.ex",
+      "type": "test",
+      "checksum": "6653a31d1e5f52f701f43ad8f534b4d2cfe7b82748a2c6205a59c9ebc3451099",
+      "feature": "features/phoenix_saga_actor.feature",
+      "generatedAt": "2026-10-25T05:31:07.615Z"
+    },
+    {
+      "filePath": "lib/transactional_system_elixir_phoenix_web/endpoint.ex",
+      "type": "test",
+      "checksum": "71bea473b472d190493745db525655198a1234b4de66b43543736c81cba32b14",
+      "feature": "features/phoenix_saga_actor.feature",
+      "generatedAt": "2026-10-25T05:31:07.615Z"
+    },
+    {
+      "filePath": "lib/transactional_system_elixir_phoenix_web/error_json.ex",
+      "type": "test",
+      "checksum": "195dd45f473c46fae2c7e524d5c2c19278cc40d3806b6f0556c3a2f03d6107ba",
+      "feature": "features/phoenix_saga_actor.feature",
+      "generatedAt": "2026-10-25T05:31:07.615Z"
+    },
+    {
+      "filePath": "lib/transactional_system_elixir_phoenix_web/live/orquestacion_de_saga_con_gen_server_y_pattern_matching_en_elixir_phoenix_live.ex",
+      "type": "test",
+      "checksum": "9e3da18804895a3c307602c471d9acb691babea93a75000ff252b2966c3d8c0a",
+      "feature": "features/phoenix_saga_actor.feature",
+      "generatedAt": "2026-10-25T05:31:07.615Z"
+    },
+    {
+      "filePath": "lib/transactional_system_elixir_phoenix_web/router.ex",
+      "type": "test",
+      "checksum": "a898e9c5839cb9f43762e56d94cfc51d3b3dc7d846a5bcc73389b15ae2335380",
+      "feature": "features/phoenix_saga_actor.feature",
+      "generatedAt": "2026-10-25T05:31:07.615Z"
+    },
+    {
+      "filePath": "lib/transactional_system_elixir_phoenix/application.ex",
+      "type": "test",
+      "checksum": "23c00e2bd597dd615d2052c63ca8a37eb1c562ae4efdbd4e50d67e3b8374ee05",
+      "feature": "features/phoenix_saga_actor.feature",
+      "generatedAt": "2026-10-25T05:31:07.615Z"
+    },
+    {
+      "filePath": "lib/transactional_system_elixir_phoenix/commands.ex",
+      "type": "test",
+      "checksum": "6f657feb1afb58e1dec93cfe3e1b5e0ef507574da5310d1715cb16518163cd30",
+      "feature": "features/phoenix_saga_actor.feature",
+      "generatedAt": "2026-10-25T05:31:07.615Z"
+    },
+    {
+      "filePath": "lib/transactional_system_elixir_phoenix/domain/orquestacion_de_saga_con_gen_server_y_pattern_matching_en_elixir_phoenix_aggregate.ex",
+      "type": "test",
+      "checksum": "b5f511bf9afa98655c0b6886fa9a838e5b79e6fc59ded303a3c66d11511e65c7",
+      "feature": "features/phoenix_saga_actor.feature",
+      "generatedAt": "2026-10-25T05:31:07.615Z"
+    },
+    {
+      "filePath": "lib/transactional_system_elixir_phoenix/jwt_tenant.ex",
+      "type": "test",
+      "checksum": "3cb6a9e00c00146d333f28207c745a5026a9c59074fd8d3fc2c9df0c3d183146",
+      "feature": "features/phoenix_saga_actor.feature",
+      "generatedAt": "2026-10-25T05:31:07.615Z"
+    },
+    {
+      "filePath": "lib/transactional_system_elixir_phoenix/outbox_relay_worker.ex",
+      "type": "test",
+      "checksum": "548d815f1278afabfd0c1d17c916fd5310ce1a1fa586c33b2d2f23a565fb6c7d",
+      "feature": "features/phoenix_saga_actor.feature",
+      "generatedAt": "2026-10-25T05:31:07.615Z"
+    },
+    {
+      "filePath": "lib/transactional_system_elixir_phoenix/runtime/broker.ex",
+      "type": "test",
+      "checksum": "f870d2bc39adbf97d4aab5e6c3ad67aa850ed362bec7f9259fe37024d3e434e7",
+      "feature": "features/phoenix_saga_actor.feature",
+      "generatedAt": "2026-10-25T05:31:07.615Z"
+    },
+    {
+      "filePath": "lib/transactional_system_elixir_phoenix/runtime/command_service.ex",
+      "type": "test",
+      "checksum": "3cdd043086f1df45d6ca03c59af7850200e83f2b7057bae005803159d46bd8d2",
+      "feature": "features/phoenix_saga_actor.feature",
+      "generatedAt": "2026-10-25T05:31:07.615Z"
+    },
+    {
+      "filePath": "lib/transactional_system_elixir_phoenix/runtime/inbox_consumer.ex",
+      "type": "test",
+      "checksum": "6f3ce0ceed4df57e49830bcd7f67eb08b48c26b5dc2c88901955f6422e995339",
+      "feature": "features/phoenix_saga_actor.feature",
+      "generatedAt": "2026-10-25T05:31:07.615Z"
+    },
+    {
+      "filePath": "lib/transactional_system_elixir_phoenix/runtime/outbox_relay.ex",
+      "type": "test",
+      "checksum": "a558c5638be61eaf17a90c390ae01cde3ee92ffc6eab0fbd55282d5d56c99f87",
+      "feature": "features/phoenix_saga_actor.feature",
+      "generatedAt": "2026-10-25T05:31:07.615Z"
+    },
+    {
+      "filePath": "lib/transactional_system_elixir_phoenix/runtime/saga.ex",
+      "type": "test",
+      "checksum": "415a6c77eb84f9d761ee89388abb77a15db81de7601a0371cf56e926f8a787fe",
+      "feature": "features/phoenix_saga_actor.feature",
+      "generatedAt": "2026-10-25T05:31:07.615Z"
+    },
+    {
+      "filePath": "lib/transactional_system_elixir_phoenix/runtime/schema.ex",
+      "type": "test",
+      "checksum": "cff4db76b9bb5617f79407736c0a89d79fc53276867620f4f56bd5ca09f87c81",
+      "feature": "features/phoenix_saga_actor.feature",
+      "generatedAt": "2026-10-25T05:31:07.615Z"
+    },
+    {
+      "filePath": "lib/transactional_system_elixir_phoenix/runtime/telemetry.ex",
+      "type": "test",
+      "checksum": "ee2346166a1b084a27f15dfdb203af8a6db5e24b87b6f45b885139c694a06dc9",
+      "feature": "features/phoenix_saga_actor.feature",
+      "generatedAt": "2026-10-25T05:31:07.615Z"
+    },
+    {
+      "filePath": "lib/transactional_system_elixir_phoenix/runtime/topology.ex",
+      "type": "test",
+      "checksum": "c3964aa45ba1d332d2b061d3d689b7b985aa05205449cdbd649831cb3cdcab40",
+      "feature": "features/phoenix_saga_actor.feature",
+      "generatedAt": "2026-10-25T05:31:07.615Z"
+    },
+    {
+      "filePath": "mix.exs",
+      "type": "test",
+      "checksum": "3466831f56efc0ec2de8cb046bb5bf1ab8603373f59b6435d6223be8a7d9618a",
+      "feature": "features/phoenix_saga_actor.feature",
+      "generatedAt": "2026-10-25T05:31:07.615Z"
+    },
+    {
+      "filePath": "openapi.json",
+      "type": "openapi",
+      "checksum": "c8715b705aa03e79b9f611d7649cdb1c50bd6bdc870eeaa05b9a2fbb5c57463e",
+      "feature": "features/phoenix_saga_actor.feature",
+      "generatedAt": "2026-10-25T05:31:07.615Z"
+    },
+    {
+      "filePath": "prompts/backend-agent.md",
+      "type": "prompt",
+      "checksum": "3fe70e8f8193d02ce53a009e59bfb8a7e33d0e5377870cda9272c4a9a1ab6e8b",
+      "feature": "features/phoenix_saga_actor.feature",
+      "generatedAt": "2026-10-25T05:31:07.615Z"
+    },
+    {
+      "filePath": "prompts/domain-agent.md",
+      "type": "prompt",
+      "checksum": "7ceb0123a5f35501205294423c1a3dcd0f4d8694623fced5454a0c18cac647fe",
+      "feature": "features/phoenix_saga_actor.feature",
+      "generatedAt": "2026-10-25T05:31:07.615Z"
+    },
+    {
+      "filePath": "prompts/qa-agent.md",
+      "type": "prompt",
+      "checksum": "6ad79acab7ff8fdf360c1c1fb91efe3965409a4705bf013f77be7224b88eebaa",
+      "feature": "features/phoenix_saga_actor.feature",
+      "generatedAt": "2026-10-25T05:31:07.615Z"
+    },
+    {
+      "filePath": "seed.sql",
+      "type": "fixture",
+      "checksum": "4ced70eb176cc8384c0c05830283136a1133d3b1aa90e08338f286e93a02df70",
+      "feature": "features/phoenix_saga_actor.feature",
+      "generatedAt": "2026-10-25T05:31:07.615Z"
+    },
+    {
+      "filePath": "test/features/orquestacion_de_saga_con_gen_server_y_pattern_matching_en_elixir_phoenix_feature_test.exs",
+      "type": "test",
+      "checksum": "ca46fa25e6a9ebbf477ca8919d1b8b353e8a36cba8f508fdce056ecff1999840",
+      "feature": "features/phoenix_saga_actor.feature",
+      "generatedAt": "2026-10-25T05:31:07.615Z"
+    },
+    {
+      "filePath": "test/support/gherkin.ex",
+      "type": "test",
+      "checksum": "3a5dfcf78b6c80388bc862bc6caa5b60a46d18f1b9b2b73364f81e6444c55511",
+      "feature": "features/phoenix_saga_actor.feature",
+      "generatedAt": "2026-10-25T05:31:07.615Z"
+    },
+    {
+      "filePath": "test/test_helper.exs",
+      "type": "test",
+      "checksum": "0f581df21e1f97b27bbf5555d47502eb23e12bf72aa934808bbdd08cbe82db3a",
+      "feature": "features/phoenix_saga_actor.feature",
+      "generatedAt": "2026-10-25T05:31:07.615Z"
+    },
+    {
+      "filePath": "test/transactional_system_elixir_phoenix_web/orquestacion_de_saga_con_gen_server_y_pattern_matching_en_elixir_phoenix_controller_test.exs",
+      "type": "test",
+      "checksum": "f20423c76466319671eaaa056bfe0ea3a886648827428f3a11d39084cb9e2964",
+      "feature": "features/phoenix_saga_actor.feature",
+      "generatedAt": "2026-10-25T05:31:07.615Z"
+    },
+    {
+      "filePath": "test/transactional_system_elixir_phoenix_web/orquestacion_de_saga_con_gen_server_y_pattern_matching_en_elixir_phoenix_http_integration_test.exs",
+      "type": "test",
+      "checksum": "20828fe000e2d476d9ec935dc8c70debec95538abbc7ecd9aed789ea56f67cb4",
+      "feature": "features/phoenix_saga_actor.feature",
+      "generatedAt": "2026-10-25T05:31:07.615Z"
+    },
+    {
+      "filePath": "test/transactional_system_elixir_phoenix_web/orquestacion_de_saga_con_gen_server_y_pattern_matching_en_elixir_phoenix_live_test.exs",
+      "type": "test",
+      "checksum": "475368ed80a6d4213bdabef9bdec9cd30feea6762b1969b72efb25d1195fa477",
+      "feature": "features/phoenix_saga_actor.feature",
+      "generatedAt": "2026-10-25T05:31:07.615Z"
+    },
+    {
+      "filePath": "test/transactional_system_elixir_phoenix/domain/orquestacion_de_saga_con_gen_server_y_pattern_matching_en_elixir_phoenix_aggregate_test.exs",
+      "type": "test",
+      "checksum": "4c118ab4f2a1271da2c01fae0a3aac9dcee230e02fe4c94dc2bda10de29bb25a",
+      "feature": "features/phoenix_saga_actor.feature",
+      "generatedAt": "2026-10-25T05:31:07.615Z"
+    },
+    {
+      "filePath": "test/transactional_system_elixir_phoenix/runtime/integration_test.exs",
+      "type": "test",
+      "checksum": "662128be11fd5cb91dda65561eddbeefd7362346c38115ccb81df5a31a93f5ef",
+      "feature": "features/phoenix_saga_actor.feature",
+      "generatedAt": "2026-10-25T05:31:07.615Z"
+    }
+  ],
+  "executions": []
+}

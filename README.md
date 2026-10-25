@@ -97,7 +97,7 @@ The full list of variables and the per-cloud services are in the [deployment gui
 ## Regenerate
 
 ```bash
-npm install -g gherkin-ai@3.2.0
+npm install -g gherkin-ai@3.2.1
 ghk lint -f features/phoenix_saga_actor.feature
 ghk generate -f features/phoenix_saga_actor.feature
 ghk converge -f features/phoenix_saga_actor.feature     # specification-to-code convergence
