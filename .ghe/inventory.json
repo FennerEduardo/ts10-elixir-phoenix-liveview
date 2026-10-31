@@ -1,6 +1,6 @@
 {
   "version": "2",
-  "cliVersion": "3.2.1",
+  "cliVersion": "3.2.2",
   "features": {
     "features/phoenix_saga_actor.feature": {
       "checksum": "e99d23a008d267df5fe2b24495ef9491c0b438c8594479fb42c5f0035070c6e9",
