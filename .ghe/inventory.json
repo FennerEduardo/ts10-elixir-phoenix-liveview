@@ -1,6 +1,6 @@
 {
   "version": "2",
-  "cliVersion": "3.2.2",
+  "cliVersion": "3.3.0",
   "features": {
     "features/phoenix_saga_actor.feature": {
       "checksum": "e99d23a008d267df5fe2b24495ef9491c0b438c8594479fb42c5f0035070c6e9",
@@ -24,9 +24,9 @@
     {
       "filePath": ".env.example",
       "type": "config",
-      "checksum": "e88706b5f096b3c59557506bc53e13021044e49018a65a89fcf2c86b106537b8",
+      "checksum": "8abd7f28521944588e79aab2c510c61f34f16c9be0a5927dba56706c33f73485",
       "feature": "features/phoenix_saga_actor.feature",
-      "generatedAt": "2026-10-25T05:31:07.615Z"
+      "generatedAt": "2026-11-03T13:48:52.044Z"
     },
     {
       "filePath": "ADR-001-architecture-decisions.md",
@@ -73,9 +73,9 @@
     {
       "filePath": "docker-compose.yml",
       "type": "config",
-      "checksum": "fd3c107fda086323cc8709f1c1fd019f493007df2c2c30f5e4ae2d6213e1b7c1",
+      "checksum": "c173620e93a60d242933f4a8ccbf0edd0fc9e8a3cc04b45b853ec391fc103811",
       "feature": "features/phoenix_saga_actor.feature",
-      "generatedAt": "2026-10-25T05:31:07.615Z"
+      "generatedAt": "2026-11-03T13:48:52.044Z"
     },
     {
       "filePath": "Dockerfile",
