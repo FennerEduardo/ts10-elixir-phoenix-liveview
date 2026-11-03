@@ -5,7 +5,7 @@
     "language": "elixir",
     "framework": "phoenix",
     "orm": "elixir-orm",
-    "database": "mysql",
+    "database": "postgresql",
     "validation": "elixir-val",
     "auth": "jwt-bcrypt",
     "messaging": "none",
